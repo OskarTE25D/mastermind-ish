@@ -7,11 +7,10 @@ def slumpis():
     if grad == "lätt":
         while not done:
             num = str(random.randint(1,6))
-            print(num)
             if num not in kod:
-                if len(kod) == 4:
-                    done = True
                 kod += num
+            if len(kod) == 4:
+                done = True
                 
     print(kod)
 slumpis()    
