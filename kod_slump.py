@@ -12,9 +12,6 @@ def slumpis(): #funktion
             if len(kod) == 4:
                 done = True
     elif grad == "svår": #samma sak som lätt men utan tal-kontrollen, svårigheten i svår kommer i gissning_svår.py
-        while not done:
-            num = str(random.randint(1,6))
-            kod += num
-            if len(kod) == 4:
-                done = True
+        for i in range(4):
+            kod += str(random.randint(1,6))
     return kod, grad #returnerar både koden och svårighetsgraden för att veta vilken av de 2 funktionerna/filerna vi har som ska anropas
