@@ -8,7 +8,9 @@
 
 #kör kodslump funktionen som frågar om svårighetsgrad och returnerar en fyrsiffrig kod
 
-#kör gissning funktion som tar gissning som input och koden som argument, och printar "jämförelsen"
+#kör gissning funktion som tar gissning som input och koden som argument, och returnerar gissningen och feedback,
+
+#printar tabellen med fin formatering, via funktion.
 
 #om man inte har rätt, sänks återstående försök
 
