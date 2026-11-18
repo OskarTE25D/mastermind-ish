@@ -1,7 +1,10 @@
 #imprtera alla roliga grejor som behövs
+from intro import intrododuktion
+from gissning_lätt import gissning_lätt
+from gissning_svår import gissning_svår
+from kod_slump import slumpis
 
 #print intro via funktion
-
 #skriv koden för lättare versionen först 
 
 #while play==True loop som omringar resten av koden
