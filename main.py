@@ -2,22 +2,34 @@
 from intro import introduktion
 from kod_slump import slumpis
 from gissning_lätt import gissning_lätt
+from gissning_svår import gissning_svår
 
 #variabler
-kod, grad = slumpis()
 play = True
+gissning_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
+feedback_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
 
 #print intro via funktion
 introduktion()
-
-#skriv koden för lättare versionen först 
-if grad == "lätt":
-    for guess in range(13):
-        gissning, feedback = gissning_lätt(kod)
-        print(feedback)
+kod, grad = slumpis()
     
 #while play==True loop som omringar resten av koden
-#while play == True:
+while play == True:
+    if grad == "lätt":
+        for guess in range(1,13):
+            gissning, feedback = gissning_lätt(kod)
+            gissning_lista[guess]=gissning
+            feedback_lista[guess]=feedback
+            
+            print(feedback)
+            
+    if grad == "svår":
+        for guess in range(1,13):
+            gissning, feedback = gissning_svår(kod)
+            gissning_lista[guess]=gissning
+            feedback_lista[guess]=feedback
+            
+            print(feedback)
 
 #kör kodslump funktionen som frågar om svårighetsgrad och returnerar en fyrsiffrig kod
 
