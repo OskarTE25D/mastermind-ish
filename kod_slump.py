@@ -3,7 +3,7 @@ import random
 def slumpis(): #funktion
     done = False
     kod = ""
-    grad = input("Välj en svårighetsgrad! ('lätt'/'svår') --> ").lower() #frågar om man vill spela lätta eller svåra versionen
+    grad = input("\nVälj en svårighetsgrad! ('lätt'/'svår') --> ").lower() #frågar om man vill spela lätta eller svåra versionen
     if grad == "lätt": #random.sample ger 4 tal mellan 1 till 7 (INTE TILL OCH MED) (random.sample(a, b), k) som en lista
         kod = random.sample(range(1,7), 4)
         kod = "".join(map(str, kod)) #konverterar listan till en sträng genom att först ändra varje iteration till en sträng och sedan sätta ihop dem med join
