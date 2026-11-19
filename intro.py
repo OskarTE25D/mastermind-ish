@@ -1,4 +1,4 @@
-def intrododuktion():
+def introduktion():
     print('''
     Datorn kommer att slumpa fram en kod på fyra siffror mellan 1 och 6.
     Du ska försöka gissa denna kods siffror på max 12 drag.
@@ -16,3 +16,35 @@ def intrododuktion():
     Svårare nivå: Det kan finnas upprepningar av en eller flera siffror
     ''')
 
+def scoreboard():
+    print(f'''
+    Drag #   Drag           Feedback
+    ---------------------------------------
+
+    12
+
+    11
+
+    10
+
+    9
+
+    8
+
+    7
+
+    6
+
+    5
+
+    4
+
+    3
+
+    2
+
+    1
+    
+    ''')
+
+    
