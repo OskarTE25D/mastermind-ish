@@ -16,7 +16,24 @@ def introduktion():
     Svårare nivå: Det kan finnas upprepningar av en eller flera siffror
     ''')
 
-def scoreboard():
+def scoreboard(g_l,f_l):
+    #g_l = gissning_lista,f_l = feedback_lista, förkortade variabelnamn för att göra textformateringen trevligare.
+    #"cur_drag=gissning_lista.index("")", kommer nog inte behöva använda denna.
+    
+    
+    '''
+    hur scoreboard kan funka:
+    formatera print-satsen nedan så att varje position under 
+    "Drag" och "Feedback" har värdet "{g_l[drag-1]}" resp. "{f_l[drag-1]}", 
+    där drag är nummret som visas åt vänster i print-satsen,
+    då borde varje position fyllas av rätt värde och standard värdet i g_l och f_l är (""),
+    så om den rundan inte körts än borde det lämnas blankt.
+    det borde fungera och då behövs yttligare textformatering 
+    för höger/vänster-justering av g_l och f_l värderna
+    '''
+    
+    
+    
     print(f'''
     Drag #   Drag           Feedback
     ---------------------------------------
@@ -46,5 +63,3 @@ def scoreboard():
     1
     
     ''')
-
-    
