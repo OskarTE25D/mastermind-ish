@@ -2,6 +2,7 @@
 from intro import introduktion
 from kod_slump import slumpis
 from gissning_lätt import gissning_lätt
+from gissning_svår import gissning_svår
 
 #variabler
 play = True
@@ -24,7 +25,7 @@ while play == True:
             
     if grad == "svår":
         for guess in range(1,13):
-            gissning, feedback = gissning_lätt(kod)
+            gissning, feedback = gissning_svår(kod)
             gissning_lista[guess]=gissning
             feedback_lista[guess]=feedback
             
