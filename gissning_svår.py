@@ -1,6 +1,11 @@
 def gissning_svår(kod):
     feedback = ""
-    gissning = input("Ange gissning som följd av fyra siffror: ")
+    while True:
+        gissning = "".join(input("Ange gissning som följd av fyra siffror: ").split())
+        if gissning.isdigit() == False or len(gissning) != 4:
+            print("Gissa fyra siffor!")
+        else:
+            break
 
     gissning_lista1 = list(gissning)
     gissning_lista2 = gissning_lista1.copy()
