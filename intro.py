@@ -1,4 +1,4 @@
-def intrododuktion():
+def introduktion():
     print('''
     Datorn kommer att slumpa fram en kod på fyra siffror mellan 1 och 6.
     Du ska försöka gissa denna kods siffror på max 12 drag.
