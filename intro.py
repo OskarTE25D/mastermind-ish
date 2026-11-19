@@ -16,3 +16,35 @@ def introduktion():
     Svårare nivå: Det kan finnas upprepningar av en eller flera siffror
     ''')
 
+def scoreboard():
+    print(f'''
+    Drag #   Drag           Feedback
+    ---------------------------------------
+
+    12
+
+    11
+
+    10
+
+    9
+
+    8
+
+    7
+
+    6
+
+    5
+
+    4
+
+    3
+
+    2
+
+    1
+    
+    ''')
+
+    
