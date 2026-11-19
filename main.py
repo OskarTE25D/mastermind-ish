@@ -1,13 +1,23 @@
 #imprtera alla roliga grejor som behövs
-from intro import intrododuktion
-from gissning_lätt import gissning_lätt
-from gissning_svår import gissning_svår
+from intro import introduktion
 from kod_slump import slumpis
+from gissning_lätt import gissning_lätt
+
+#variabler
+kod, grad = slumpis()
+play = True
 
 #print intro via funktion
-#skriv koden för lättare versionen först 
+introduktion()
 
+#skriv koden för lättare versionen först 
+if grad == "lätt":
+    for guess in range(13):
+        gissning, feedback = gissning_lätt(kod)
+        print(feedback)
+    
 #while play==True loop som omringar resten av koden
+#while play == True:
 
 #kör kodslump funktionen som frågar om svårighetsgrad och returnerar en fyrsiffrig kod
 
