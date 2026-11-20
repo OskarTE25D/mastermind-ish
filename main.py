@@ -16,7 +16,7 @@ kod, grad = slumpis()
 #while play==True loop som omringar resten av koden
 while play == True:
     if grad == "lätt":
-        for guess in range(1,13):
+        for guess in range(12):
             gissning, feedback = gissning_lätt(kod)
             gissning_lista[guess]=gissning
             feedback_lista[guess]=feedback
@@ -24,7 +24,7 @@ while play == True:
             print(feedback)
             
     if grad == "svår":
-        for guess in range(1,13):
+        for guess in range(12):
             gissning, feedback = gissning_svår(kod)
             gissning_lista[guess]=gissning
             feedback_lista[guess]=feedback
