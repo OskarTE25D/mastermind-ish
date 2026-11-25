@@ -2,9 +2,11 @@ def gissning_svår(kod): #funktion för den svåra nivån på mastermind
     feedback = "" #variabel som visar vad som var rätt/fel plats
     
     while True: #while-loop för inmatningssäkerhet
-        gissning = "".join(input("Ange gissning som följd av fyra siffror: ").split()) #input och tar bort mellanslag
-        if gissning.isdigit() == False or len(gissning) != 4: #inmatningssäkerhet
-            print("Gissa fyra siffor!")
+        gissning = "".join(input("Ange gissning som följd av fyra siffror --> ").split()) #input och tar bort mellanslag
+        if gissning.isdigit() == False: #inmatningssäkerhet
+            print("Gissa fyra SIFFROR!")
+        elif len(gissning) != 4: #inmatningssäkerhet
+            print("Gissa FYRA siffror!")
         else:
             break
     
