@@ -7,7 +7,7 @@ from gissning_svår import gissning_svår
 #variabler
 play = True
 gissning_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
-feedback_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
+feedback_lista = ["    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    "]
 
 #print intro via funktion
 introduktion()
