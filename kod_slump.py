@@ -10,4 +10,4 @@ def slumpis(): #funktion
     elif grad == "svår": #samma sak som lätt men utan tal-kontrollen, svårigheten i svår kommer i gissning_svår.py
         for i in range(4):
             kod += str(random.randint(1,6))
-    return kod, grad #returnerar både koden och svårighetsgraden för att veta vilken av de 2 funktionerna/filerna vi har som ska anropas
+    return kod #returnerar både koden och svårighetsgraden för att veta vilken av de 2 funktionerna/filerna vi har som ska anropas
