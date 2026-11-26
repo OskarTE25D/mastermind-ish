@@ -2,7 +2,7 @@
 from intro import introduktion
 from kod_slump import slumpis
 from intro import scoreboard
-from gissning_svår import gissning_svår
+from gissning import gissning_svår
 
 play = True
 
