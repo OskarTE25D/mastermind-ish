@@ -4,32 +4,36 @@ from kod_slump import slumpis
 from intro import scoreboard
 from gissning_svår import gissning_svår
 
-#variabler
 play = True
-gissning_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
-feedback_lista = ["    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    "]
 
 #print intro via funktion
 introduktion()
-kod = slumpis()
+kod = "1111" #slumpis()
     
 #while play==True loop som omringar resten av koden
-while play == True:
-        for guess in range(12):
-            gissning, feedback = gissning_svår(kod)
-            gissning_lista[guess]=gissning
-            feedback_lista[guess]=feedback
-            
-            scoreboard(gissning_lista,feedback_lista)
-
-#kör kodslump funktionen som frågar om svårighetsgrad och returnerar en fyrsiffrig kod
-
 #kör gissning funktion som tar gissning som input och koden som argument, och returnerar gissningen och feedback,
+while play == True:
+        # Variabler
+        gissning_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
+        feedback_lista = ["    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    "]
 
-#printar tabellen med fin formatering, via funktion.
+        for guess in range(12):
+                gissning, feedback = gissning_svår(kod)
+                gissning_lista[guess]=gissning
+                feedback_lista[guess]=feedback
+        
+                scoreboard(gissning_lista,feedback_lista)
 
-#om man inte har rätt, sänks återstående försök
+    #printar tabellen med fin formatering, via funktion.
 
-#fråga om man vill köra igen
-
-#hejdå
+    #om man inte har rätt, sänks återstående försök
+                if gissning == kod:
+                    print(f"bra jobbat ig, du gissade rätt på {guess + 1} försök!")
+                    break
+        else:
+                print("Fucking sämst")
+                print(f"Rätt kod var: {kod}")
+    #fråga om man vill köra igen
+        if input("Vill du spela igen? (j/n): ").strip().lower() != "j":
+                print('buuuu')
+                play = False
