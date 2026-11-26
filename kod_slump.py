@@ -1,7 +1,6 @@
 import random
 
 def slumpis(): #funktion
-    done = False
     debug_mode=False
     kod = ""
     while True:
