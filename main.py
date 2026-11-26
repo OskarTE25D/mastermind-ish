@@ -8,7 +8,7 @@ play = True
 
 #print intro via funktion
 introduktion()
-kod = "1111" #slumpis()
+
     
 #while play==True loop som omringar resten av koden
 #kör gissning funktion som tar gissning som input och koden som argument, och returnerar gissningen och feedback,
@@ -16,6 +16,7 @@ while play == True:
         # Variabler
         gissning_lista = ["", "", "", "", "", "", "", "", "", "", "", ""]
         feedback_lista = ["    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    ", "    "]
+        kod = slumpis()
 
         for guess in range(12):
                 gissning, feedback = gissning_svår(kod)
