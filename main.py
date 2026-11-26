@@ -20,7 +20,7 @@ while play == True:
             gissning_lista[guess]=gissning
             feedback_lista[guess]=feedback
             
-            print(feedback)
+            scoreboard(gissning_lista,feedback_lista)
 
 #kör kodslump funktionen som frågar om svårighetsgrad och returnerar en fyrsiffrig kod
 

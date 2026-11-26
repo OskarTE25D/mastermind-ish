@@ -16,13 +16,13 @@ def gissning_svår(kod): #funktion för den svåra nivån på mastermind
 
     for pos, digit in enumerate(gissning_lista1): #for-loop som kollar varje siffra i gissning_lista1
         if digit == kod[pos]: #kollar ifall digit (en siffra i gissnint_lista1) finns i koden
-            feedback += "✓" #lägger till "✓" i feedback ifall digit fanns i kod på samma plats som i gissning
+            feedback += "✓ " #lägger till "✓" i feedback ifall digit fanns i kod på samma plats som i gissning
             gissning_lista2[pos] = None #säger att den siffran på den positionen redan har använts
             kod_lista[pos] = None #säger att den siffran i kod redan har funnits
 
     for digit in gissning_lista2: #for-loop som kollar varje siffra i gissning_lista2
         if digit is not None and digit in kod_lista: #kollar ifall digit inte är använd och den finns i koden
-            feedback += "☐" #lägger till "☐" i feedback ifall digit fanns i kod
+            feedback += "☐ " #lägger till "☐" i feedback ifall digit fanns i kod
             kod_lista[kod_lista.index(digit)] = None #säger att första positionen för digit har använts
 
-    return gissning, feedback
+    return gissning, feedback.strip()
