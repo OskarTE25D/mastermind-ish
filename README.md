@@ -7,4 +7,6 @@ Lektion 1 (2026-11-18):
     Alla började jobba på sina funktionen och skrev en stor del av koden.
 
 Lektion 2 (2026-11-19):
-    
+    Formaterade print satsen för scoreboard fuktionen.
+    Tog bort en filen som man inte behövde.
+    Fixade lite inmatningssäkerhet.
