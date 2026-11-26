@@ -31,7 +31,7 @@ def scoreboard(g_l,f_l):
     det borde fungera och då behövs yttligare textformatering 
     för höger/vänster-justering av g_l och f_l värderna
     '''
-    print(f"Drag #{" ":>9}Drag{" ":>11}Feedback{" ":>7}\n{"-"*45}\n\n12{g_l[11]:>17}{f_l[11]:>15}\n\n11{g_l[10]:>17}{f_l[10]:>15}\n\n10{g_l[9]:>17}{f_l[9]:>15}\n\n9{g_l[8]:>18}{f_l[8]:>15}\n\n8{g_l[7]:>18}{f_l[7]:>15}\n\n7{g_l[6]:>18}{f_l[6]:>15}\n\n6{g_l[5]:>18}{f_l[5]:>15}\n\n5{g_l[4]:>18}{f_l[4]:>15}\n\n4{g_l[3]:>18}{f_l[3]:>15}\n\n3{g_l[2]:>18}{f_l[2]:>15}\n\n2{g_l[1]:>18}{f_l[1]:>15}\n\n1{g_l[0]:>18}{f_l[0]:>15}\n\n")
+    print(f"Drag #{" ":>9}Drag{" ":>11}Feedback{" ":>7}\n{"-"*45}\n\n12{g_l[11]:>17}{" "*11}{f_l[11]}\n\n11{g_l[10]:>17}{" "*11}{f_l[10]}\n\n10{g_l[9]:>17}{" "*11}{f_l[9]}\n\n9{g_l[8]:>18}{" "*11}{f_l[8]}\n\n8{g_l[7]:>18}{" "*11}{f_l[7]}\n\n7{g_l[6]:>18}{" "*11}{f_l[6]}\n\n6{g_l[5]:>18}{" "*11}{f_l[5]}\n\n5{g_l[4]:>18}{" "*11}{f_l[4]}\n\n4{g_l[3]:>18}{" "*11}{f_l[3]}\n\n3{g_l[2]:>18}{" "*11}{f_l[2]}\n\n2{g_l[1]:>18}{" "*11}{f_l[1]}\n\n1{g_l[0]:>18}{" "*11}{f_l[0]}\n")
 
 #gammal print nedan (obs tog bort citaterna inuti printen)    
 '''
